@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no" >
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/906a4490b6.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <div class="container-EN" id="EN">
+        <div class="oops" style="display: none;">Oops, it seems you zoomed-out too much or your screen is too wide, try zooming-in!</div>
+            <div class="oops" style="display: none;">Oops, al parecer alejaste mucho la lupa o tu pantalla es muy ancha, intenta hacer zoom!</div>
+        <div class="contSide">
+            <div class="mainTitle-EN">INFORMATION</div>
+            <div id="profileInfo" class="untoggledDiv">
+                ARGENTINA, CABA
+                (+54) 9 11 5651-3400
+                ALEX.FATH.ALEX@GMAIL.COM
+                05/08/1998 (24 YEARS OLD)
+            </div>
+            <div class="mainTitle-EN">TECNOLOGIES</div>
+            <div id="profileTecno" class="sideContent">
+                JAVASCRIPT
+                PHP
+                MYSQL
+                SQL
+                NODEJs
+                AJAX
+            </div>
+            <div class="mainTitle-EN">ACHIVEMENTS</div>
+            <div id="profileAchievements" class="sideContent">
+                <a href="https://www.hackerrank.com/certificates/ba4bf7b903b0" target=”_blank” >
+                    <i class="fa-brands fa-hackerrank"></i> SQL BASIC CERTIFICATE
+                </a>
+            </div>
+        </div>
+        <div class="contHeader">
+            <img id="pfp" class="untoggledPic" src="pfp.jpeg" alt="">
+            <div class="headerMaintitle">Alexander Fath Montes de Oca</div>
+            <div class="headerSubTitle">Fullstack Web Developer</div>
+        </div>
+        <div class="contMenu">
+            <div onclick="
+            toggle('pfp', 'untoggledPic', 'toggledPic')" class="fa-regular fa-circle-user">
+                <i></i>
+            </div> 
+            <i onclick="
+            toggle('profileInfo', 'toggledDiv', 'untoggledDiv');
+            toggle('profileTecno', 'toggledDiv', 'untoggledDiv');
+            toggle('profileAchievements', 'toggledDiv', 'untoggledDiv');" 
+            id="profileInfoBtn" class="fa-solid fa-circle-info"></i> 
+            <div class="language" onclick="changeLanguage('EN', 'ES');">   
+                <i class="fa-solid fa-language"></i>
+                <p class="language-display" id="lang">ENGLISH</p>
+                </div>
+            <a href="https://www.linkedin.com/in/alexander-fath" target=”_blank”><i class="fa-brands fa-linkedin"></i></a> 
+        </div> 
+        <div class="contMain">
+            
+            <div id="toggleMain" class="untoggledDiv"></div>
+            <br>
+            <div class="mainTitle-EN">FORMATION</div>
+            <div class="listTitle-EN">Highschool | Argentina, CABA | Ana María Janer | January 2014 - December 2017</div>
+            <div class="listContent-EN">I've achieved an average score of 7 in all my classes and graduated with a Bachelor in communication.</div>
+            <div class="listContent-EN">The best valuable I've learned was team work, taking responsibilities and manage leadership of the work team.</div>
+            <div class="listTitle-EN">Udemy | Argentina, CABA | August 2018 - July 2019 </div>
+            <div class="listContent-EN">I've learned the basics of programming in HTML, CSS, PHP, Javascript and MySQL in a online course. <br> In this period I've made some projects such as local websites with some common web applications.</div>
+            <div class="mainTitle-EN">EXPERIENCE</div>
+                <div class="listTitle-EN">Freelance | PHP + MySQL + Javascript | March 2020 - february 2021</div>
+                <div class="listContent-EN">
+                    <ul>
+                        <li>FrontEnd and BackEnd developer in diverse Websites from scratch.</li>
+                        <li>No use of any library, coded with raw PHP, CSS and Javascript.</li>
+                        <li>Incorporation of communication skills to integrate every client's expectations into designs both in spanish and english via phone calls and meets.</li>
+                        <li>Depevoled an 'Sign in|Log in' application connected with MySQL with basic sensitive data protection.</li>
+                        <li>Achieved a total of consecutive 3000 users registered in the Website.</li>
+                        <li>Had to handmade banners and logos at client's demand, both in paper and digital.</li>
+                    </ul>
+                </div>
+                <div class="listTitle-EN">Freelance | Javascript + Ajax + API + MySQL + NodeJs | March - July 2022</div>
+                <div class="listContent-EN">
+                    <ul>
+                        <li>FrontEnd and BackEnd developer in a complex stock management website made from scratch.</li>
+                        <li>Developed an API with AJAX to handle requests from multiple devices connected at the same time</li>
+                        <li>Made a MySQL + Node connection pool to prevent servers from crashing.</li>
+                        <li>Basic testing and troubleshooting</li>
+                        <li>Developed a shopping kart able to sell items from the stock and register every sell while printing a receit with a POS printer via Wi-fi</li>
+                        <li>Included a 'Dolar to Pesos' converter with Client-side storage</li>
+                    </ul>
+                </div>
+                <div class="listTitle-EN">Freelance | BackEnd dev | Notimation |October - December 2022</div>
+                <div class="listContent-EN">
+                    <ul>
+                        <li>Performed an analytics application.</li>
+                        <li>Basic testing and troubleshooting with different devices.</li>
+                        <li>Researched and analized several key components to the project, engaging in the work team with proactive ideas.</li>
+                    </ul>
+                </div>
+
+                <div class="oops">Oops, it seems you zoomed-out too much or your screen is too wide, try zooming-in!</div>
+            <div class="oops">Oops, al parecer alejaste mucho la lupa o tu pantalla es muy ancha, intenta hacer zoom!</div>
+                <!-- language change -->
+                <div class="EN-MUTE"></div>
+                <div class="ES-MUTE"></div>
+                <!-- language change -->
+        </div>
+    </div>
+    <div class="ES-MUTE" id="ES">
+        <div class="oops" style="display: none;">Oops, it seems you zoomed-out too much or your screen is too wide, try zooming-in!</div>
+            <div class="oops" style="display: none;">Oops, al parecer alejaste mucho la lupa o tu pantalla es muy ancha, intenta hacer zoom!</div>
+        <div class="contSide">
+            <div class="mainTitle-ES">INFORMACIÓN</div>
+            <div id="profileInfo-ES" class="untoggledDiv">
+                ARGENTINA, CABA
+                (+54) 9 11 5651-3400
+                ALEX.FATH.ALEX@GMAIL.COM
+                05/08/1998 (24 AÑOS)
+            </div>
+            <div class="mainTitle-ES">TECNOLOGÍAS</div>
+            <div id="profileTecno-ES" class="sideContent">
+                JAVASCRIPT
+                PHP
+                MYSQL
+                SQL
+                NODEJs
+                AJAX
+            </div>
+            <div class="mainTitle-ES">LOGROS</div>
+            <div id="profileAchievements-ES" class="sideContent">
+                <a href="https://www.hackerrank.com/certificates/ba4bf7b903b0" target=”_blank” >
+                    <i class="fa-brands fa-hackerrank"></i> CERTIFICADO DE SQL BÁSICO
+                </a>
+            </div>
+        </div>
+        <div class="contHeader">
+            <img id="pfp-ES" class="untoggledPic" src="pfp.jpeg" alt="">
+            <div class="headerMaintitle">Alexander Fath Montes de Oca</div>
+            <div class="headerSubTitle">Fullstack Web Developer</div>
+        </div>
+        <div class="contMenu">
+            <i onclick="toggle('pfp-ES', 'toggledPic', 'untoggledPic')" class="fa-regular fa-circle-user"></i> 
+            <i onclick="
+            toggle('profileInfo-ES', 'toggledDiv', 'untoggledDiv');
+            toggle('profileTecno-ES', 'toggledDiv', 'untoggledDiv');
+            toggle('profileAchievements-ES', 'toggledDiv', 'untoggledDiv');" id="profileInfoBtn" class="fa-solid fa-circle-info"></i>
+            <div class="language" onclick="changeLanguage('EN', 'ES')">  
+            <i class="fa-solid fa-language"></i>
+            <br>
+            <p class="language-display" id="lang">ENGLISH</p>
+            </div>
+            <a href="https://www.linkedin.com/in/alexander-fath" target=”_blank”><i class="fa-brands fa-linkedin"></i></a> 
+        </div> 
+        <div class="contMain">
+            <div class="oops" style="display: none;">Oops, it seems you zoomed-out too much or your screen is too wide, try zooming-in!</div>
+            <div class="oops" style="display: none;">Oops, al parecer alejaste mucho la lupa o tu pantalla es muy ancha, intenta hacer zoom!</div>
+            <div id="unToggledMain-ES" class=""></div>
+            <br>
+            <div class="mainTitle-ES">FORMACIÓN</div>
+            <div class="listTitle-ES">Secundaria | Argentina, CABA | Ana María Janer | Enero 2014 - Diciembre 2017</div>
+            <div class="listContent-ES">Logré con un promedio de 7 en todas las clases y me gradué como bachillerato en comunicación.</div>
+            <div class="listContent-ES">El mejor valor que aprendí es trabajar en equipo, tomar responsabilidades y manejar liderazgo en los grupos de trabajo.</div>
+            <div class="listTitle-ES">Udemy | Argentina, CABA | Agosto 2018 - Julio 2019 </div>
+            <div class="listContent-ES">Aprendí las bases de programación con HTML, CSS, PHP, Javascript y MySQL en un curso online. <br>En este período, realicé algunos proyectos locales como páginas web con simples applicaciones.</div>
+            <div class="mainTitle-ES">EXPERIENCIAS</div>
+                <div class="listTitle-ES">Freelance | PHP + MySQL + Javascript | Argentina, CABA | Marzo a diciembre 2020</div>
+                <div class="listContent-ES">
+                    <ul>
+                        <li>Desarrollé el frontEnd y backEnd desde cero.</li>
+                        <li>No utilicé ninguna librería, programé con PHP, CSS y Javascript crudo.</li>
+                        <li>Aprendí e incorporé habilidades de comunicación para analizar e integrar todas las expectativas de los clientes en diseños y componentes, tanto en español como inglés.</li>
+                        <li>Desarrollé una aplicación 'Crear cuenta | Iniciar sesión' conectada a MySQL con una básica protección de información delicada.</li>
+                        <li>Logró la creación de 3000 cuentas de usuarios consecutivos.</li>
+                        <li>Realicé banners y logos para algunos clientes a mano, tanto en papel como digital.</li>
+                    </ul>
+                </div>
+                <div class="listTitle-ES">Freelance | Javascript + Ajax + API + MySQL + NodeJs | Marzo a Junio 2021</div>
+                <div class="listContent-ES">
+                    <ul>
+                        <li>Desarrollé el FrontEnd y BackEnd en una compleja página web de gestión de stock.</li>
+                        <li>Desarrollé una API con AJAX para manejar requests desde varios dispositivos desktop al mismo tiempo.</li>
+                        <li>Hice un pool de conección con MySQL y Node para prevenir conflicto entre servidores.</li>
+                        <li>Básico testing y troubleshooting.</li>
+                        <li>Desarrollé un 'carrito de compras' capaz de vender cualquier item del stock y registrar todas las ventas mientras imprime en un recibo con una impresora POS conectada a Wi-fi.</li>
+                    </ul>
+                </div>
+                <div class="listTitle-EN">Freelance | BackEnd dev | Notimation |October - December 2022</div>
+                <div class="listContent-EN">
+                    <ul>
+                        <li>Desempeñe una aplicación de analytics.</li>
+                        <li>Testing básico y troubleshooting desde varios dispositivos.</li>
+                        <li>Investigación y analización de varios componentes key del proyecto, participando en el equipo de trabajo con ideas proactivas.</li>
+                    </ul>
+                </div>
+            </div>
+            
+</body>
+</html>
